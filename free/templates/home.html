@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+
+{% block modal %}
+
+<!-- Small modal -->
+
+
+<div class="bd-example">
+  <center><button type="button" class="btn btn-danger" data-toggle="modal" data-target=".bd-example-modal-lg">DELETE THE INTERNET</button></center>
+  
+</div>
+
+
+
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title" id="myLargeModalLabel">CONGRATULATIONS!</h4>
+      </div>
+      <div class="modal-body">
+        You've just deleted the internet. NOW GO OUTSIDE AND LIVE LIKE A NORMAL PERSON!!!
+      </div>
+    </div>
+  </div>
+</div>
+  {% endblock %}
